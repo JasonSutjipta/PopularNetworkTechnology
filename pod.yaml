@@ -1,0 +1,12 @@
+apiVersion: v1
+kind : Pod
+metadata:
+  name: app
+  labels:
+    apps: app
+specs:
+  containers:
+    - name: sample-app
+      image: banamii/pnt-ses3:latest
+      ports:
+        - containerPort: 8080
